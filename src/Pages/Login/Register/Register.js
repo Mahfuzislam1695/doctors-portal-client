@@ -22,7 +22,7 @@ const Register = () => {
             alert('Your password did not match');
             return
         }
-         registerUser(loginData.email, loginData.password);
+        registerUser(loginData.email, loginData.password);
         e.preventDefault();
     }
     return (
