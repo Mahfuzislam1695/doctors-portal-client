@@ -11,24 +11,24 @@ import whitening from '../../../images/whitening.png';
 const services = [
     {
         name: 'Fluoride Treatment',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa cumque enim! Voluptatibus aliquid expedita saepe accusantium itaque ducimus rem voluptas',
+        description: 'Fluoride treatments are typically professional treatments containing a high concentration of fluoride that a dentist or hygienist will apply to a person teeth to improve health',
         img: fluoride
     },
     {
         name: 'Cavity Filling',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa cumque enim! Voluptatibus aliquid expedita saepe accusantium itaque ducimus rem voluptas',
+        description: 'Basically, a cavity is hole in the tooth . This is often often caused by bacteria, which builds up from eating unhealthy food and not caring for your teeth properly.',
         img: cavity
     },
     {
         name: 'Teeth Whitening',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa cumque enim! Voluptatibus aliquid expedita saepe accusantium itaque ducimus rem voluptas',
+        description: 'Teeth whitening is a simple process. Whitening products contain one of two tooth bleaches (hydrogen peroxide or carbamide peroxide)',
         img: whitening
     }
 ]
 
 
-const Services = () => {
-    return (
+ const Services = () => {
+     return (
         <Box sx={{ flexGrow: 1 }}>
             <Container>
                 <Typography sx={{ fontWeight: 500, m: 2, color: 'success.main' }} variant="h6" component="div">
@@ -47,7 +47,7 @@ const Services = () => {
                 </Grid>
             </Container>
         </Box>
-    );
-};
+     );
+ };
 
-export default Services;
+ export default Services;

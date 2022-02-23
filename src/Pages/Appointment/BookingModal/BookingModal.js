@@ -42,8 +42,10 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
             serviceName: name,
             date: date.toLocaleDateString()
         }
+        console.log(appointment);
         // send to the server
-        fetch('http://localhost:5000/appointments', {
+    //     fetch('https://stark-caverns-04377.herokuapp.com/appointments', {
+    fetch('https://arcane-fortress-62120.herokuapp.com/appointments',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -52,12 +54,13 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
         })
             .then(res => res.json())
             .then(data => {
+                console.log(data);
                 if (data.insertedId) {
                     setBookingSuccess(true);
                     handleBookingClose();
                 }
-            });
-
+             });
+        handleBookingClose();
         e.preventDefault();
     }
 
@@ -72,9 +75,9 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
             BackdropProps={{
                 timeout: 500,
             }}
-        >
+            >
             <Fade in={openBooking}>
-                <Box sx={style}>
+                <Box sx={style}>   
                     <Typography id="transition-modal-title" variant="h6" component="h2">
                         {name}
                     </Typography>
@@ -88,8 +91,8 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
                         />
                         <TextField
                             sx={{ width: '90%', m: 1 }}
+                            name="displayName"
                             id="outlined-size-small"
-                            name="patientName"
                             onBlur={handleOnBlur}
                             defaultValue={user.displayName}
                             size="small"

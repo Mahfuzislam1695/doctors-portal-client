@@ -35,7 +35,7 @@ const AppointmentBanner = () => {
                             Make an Appointment Today
                         </Typography>
                         <Typography variant="h6" sx={{ my: 5 }} style={{ color: 'white', fontSize: 14, fontWeight: 300 }}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere totam aliquam praesentium vel. Amet veniam odio vero doloremque laborum.
+                            If you have dental insurance, see if your dentist is in-network prior to making yur appointment to save money.
                         </Typography>
                         <Button variant="contained" style={{ backgroundColor: '#5CE7ED' }}>Learn More</Button>
                     </Box>
