@@ -5,11 +5,11 @@ import Doctor from '../Doctor/Doctor';
 const Doctors = () => {
     const [doctors, setDoctors] = useState([]);
 
-    // useEffect(() => {
-    //     fetch('https://arcane-fortress-62120.herokuapp.com/doctors')
-    //         .then(res => res.json())
-    //         .then(data => setDoctors(data))
-    // }, [])
+    useEffect(() => {
+        fetch('https://arcane-fortress-62120.herokuapp.com/doctors')
+            .then(res => res.json())
+            .then(data => setDoctors(data))
+    }, [])
 
     return (
         <div>
