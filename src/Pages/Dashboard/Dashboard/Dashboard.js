@@ -80,6 +80,7 @@ function Dashboard(props) {
                     <Typography variant="h6" noWrap component="div">
                         Dashboard
                     </Typography>
+                    <Link style={{ textDecoration: 'none', color: 'white', textAlign: 'right' }} to="/home"><Button color="inherit">Home</Button></Link>
                 </Toolbar>
             </AppBar>
             <Box

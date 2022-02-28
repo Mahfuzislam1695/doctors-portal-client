@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Grid } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 import Doctor from '../Doctor/Doctor';
 
 const Doctors = () => {
@@ -13,7 +13,7 @@ const Doctors = () => {
 
     return (
         <div>
-            <h2>Our Doctors: {doctors.length}</h2>
+             <Typography variant="h5" color="#19D3AE" sx={{ textAlign: "center", mt: 8, fontWeight: 500 }}>OUR DOCTORS: {doctors.length}</Typography>
             <Container>
                 <Grid container spacing={2}>
                     {

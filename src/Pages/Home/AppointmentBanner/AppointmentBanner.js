@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid';
 import doctor from '../../../images/doctor.png'
 import bg from '../../../images/appointment-bg.png'
 import { Button, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const appointmentBanner = {
     background: `url(${bg})`,
@@ -37,7 +38,7 @@ const AppointmentBanner = () => {
                         <Typography variant="h6" sx={{ my: 5 }} style={{ color: 'white', fontSize: 14, fontWeight: 300 }}>
                             If you have dental insurance, see if your dentist is in-network prior to making yur appointment to save money.
                         </Typography>
-                        <Button variant="contained" style={{ backgroundColor: '#5CE7ED' }}>Learn More</Button>
+                        <Link style={{ textDecoration: 'none' }} to="/appointment"><Button variant="contained">Appointment</Button></Link>
                     </Box>
                 </Grid>
             </Grid>
