@@ -7,7 +7,7 @@ const About = () => {
         <Container id="about" sx={{ pt: 5 }}>
             <Grid container spacing={3} alignItems="center">
                 <Grid item xs={12} sm={12} md={5} lg={5}>
-                    <img src={treatmentImg} alt="" width="100%" />
+                    <img style={{ width: '100%' }} src={treatmentImg} alt=""/>
                 </Grid>
                 <Grid item xs={12} sm={12} md={7} lg={7}>
                     <Typography variant="h3" fontWeight={500}>Exponetional Dental Care, on your Term</Typography>
