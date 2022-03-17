@@ -24,7 +24,7 @@ const Contact = () => {
     })
     const { root, textArea } = useStyle()
     return (
-        <div className={root}>
+        <div id ="contact" className={root}>
             <Container maxWidth="md">
                 <Typography variant="h6" color="#19D3AE">Contact us</Typography>
                 <Typography variant="h4" color="#fff">Always connect with us</Typography>
