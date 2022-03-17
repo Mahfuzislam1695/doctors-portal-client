@@ -1,9 +1,9 @@
 import React from 'react';
 import { Grid, Paper, Typography } from '@mui/material';
-import CallIcon from '@mui/icons-material/Call';
+
 
 const Doctor = ({ doctor }) => {
-    const { name, image, phone } = doctor;
+    const { name, image } = doctor;
     return (
         <Grid item xs={12} sm={12} md={4} lg={4}>
             <Paper elevation={0} sx={{ textAlign: 'center' }}>

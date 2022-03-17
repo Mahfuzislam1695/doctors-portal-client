@@ -1,7 +1,5 @@
 import React from 'react';
-import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link, NavLink } from 'react-router-dom';
@@ -63,7 +61,9 @@ const Navigation = () => {
                         <Nav.Link as={HashLink} to="/home#service"><Button className='text-white'>Service</Button></Nav.Link>
                         <Nav.Link as={HashLink} to="/home#blog"><Button className='text-white'>Blog</Button></Nav.Link>
                         <Nav.Link as={HashLink} to="/home#contact"><Button className='text-white'>Contact</Button></Nav.Link>
-                        
+                        <Box>
+                        <Link style={{ textDecoration: 'none', color: 'white' }} to="/appointment"><Button color="inherit">Appointment</Button></Link>
+                    </Box>    
                         
                        {
                        user?.email ?

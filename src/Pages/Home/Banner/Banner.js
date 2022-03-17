@@ -2,18 +2,18 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import chair from '../../../images/chair.png';
 import bg from '../../../images/bg.png';
-import bg1 from '../../../images/appointment-bg.png';
+// import bg1 from '../../../images/appointment-bg.png';
 import { Typography, Button, Container } from '@mui/material';
 import Box from '@mui/material/Box';
 import BannerButtom from '../BannerButtom/BannerButtom';
 import { Link } from 'react-router-dom';
 
-const bannerBg1 = {
-    background: `url(${bg1})`,
-    backgroundColor: 'rgba(45, 58, 74, 0.9)',
-    backgroundBlendMode: 'darken, luminosity',
+// const bannerBg1 = {
+//     background: `url(${bg1})`,
+//     backgroundColor: 'rgba(45, 58, 74, 0.9)',
+//     backgroundBlendMode: 'darken, luminosity',
 
-}
+// }
 
 const bannerBg = {
     background: `url(${bg})`,
@@ -29,7 +29,7 @@ const verticalCenter = {
 const Banner = () => {
     return (
         <>
-            <Container style={bannerBg} sx={{ flexGrow: 1 }}>
+            <Container style={bannerBg} sx={{ flexGrow: 1,marginTop: -20 }}>
                 <Grid container spacing={2}>
                     <Grid item style={{ ...verticalCenter, textAlign: 'left', bannerBg }} xs={12} md={6} >
                         <Box>

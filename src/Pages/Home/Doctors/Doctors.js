@@ -14,7 +14,7 @@ const Doctors = () => {
     return (
         <div>
              <Typography variant="h5" color="#19D3AE" sx={{ textAlign: "center", mt: 8, fontWeight: 500 }}>OUR DOCTORS: {doctors.length}</Typography>
-            <Container>
+            <Container style={{marginTop: 20}}>
                 <Grid container spacing={2}>
                     {
                         doctors.map(doctor => <Doctor
